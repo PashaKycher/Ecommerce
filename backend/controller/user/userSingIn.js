@@ -30,7 +30,7 @@ async function userSingInController(req, res) {
             const tokenOptions = {
                 httpOnly: true,
                 secure: true,
-                smeSite: 'none',
+                smeSite: 'None',
             }
             // send token in cookie
             res.cookie('token', token, tokenOptions).status(200).json({
