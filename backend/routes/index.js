@@ -23,6 +23,7 @@ const filterProductController = require('../controller/product/filterProduct');
 const paymentController = require('../controller/order/payment');
 const webhooksController = require('../controller/order/webhooks');
 const orderController = require('../controller/order/order');
+const allOrderController = require('../controller/order/allOrder');
 
 // routes for all user
 router.post('/singup', userSingUpController)
@@ -36,6 +37,7 @@ router.get('/all-cart-product', authToken, addToCartViewController)
 // routes for admin
 router.get('/all-users',authToken ,allUsersController)
 router.post('/update-user', authToken, updateUserController)
+router.get('/all-orders', authToken, allOrderController)
 
 // routes for products
 router.post('/upload-product',authToken, uploadProductController)
