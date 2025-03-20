@@ -4,7 +4,7 @@ async function userLogoutController(req, res) {
         const tokenOptions = {
             httpOnly: true,
             secure: true,
-            smeSite: 'None',
+            sameSite: 'None',
         }
         // clear cookie which name 'token'
         res.clearCookie('token', tokenOptions).status(200).json({
