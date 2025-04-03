@@ -158,7 +158,7 @@ const Cart = () => {
                                         />
                                     </Link>
                                     {/* product info and quantity */}
-                                    <Link
+                                    <div
                                         className='px-4 py-2'
                                         to={`/product/${item?.productId?._id}`}
                                     >
@@ -200,7 +200,7 @@ const Cart = () => {
                                                 +
                                             </button>
                                         </div>
-                                    </Link>
+                                    </div>
                                     {/* delete product and total price */}
                                     <div>
                                         {/* delete product */}
